@@ -1,0 +1,218 @@
+/* Estilo básico para restablecer márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para el body */
+body {
+    background-image: url('fondooficial.png'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: transparent; /* Cambia a transparente */
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar a {
+    color: #fff; /* Cambiado a blanco */
+    text-decoration: none;
+    margin: 0 30px; /* Aumenta el margen lateral para separarlos más */
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #00796b;
+}
+
+/* Sección de héroe */
+.hero {
+    display: flex;
+    align-items: flex-start; /* Alinea el contenido hacia la izquierda */
+    justify-content: flex-start; /* Alinea el contenido hacia la izquierda */
+    padding: 50px;
+    height: calc(100vh - 50px);
+    position: relative; /* Establece un contexto para el logo */
+}
+
+/* Estilo para el logo */
+.logo-small {
+    width: 70px; /* Tamaño más pequeño */
+    height: 70px; /* Mantener proporción */
+    border-radius: 50%; /* Hace que el logo sea redondo */
+    position: absolute; /* Permite posicionar el logo */
+    top: -10px; /* Ajusta el desplazamiento desde la parte superior */
+    left: 15px; /* Desplazamiento desde la izquierda */
+}
+
+/* Contenedor para la imagen de la derecha */
+.image-container {
+    background-image: url('your-image-url.jpg'); /* Cambia a la ruta de tu imagen */
+    background-size: cover; /* Asegura que la imagen cubra toda la sección */
+    background-position: center; /* Centra la imagen */
+    width: 33.33%; /* Ocupa un tercio de la pantalla */
+    height: 100%; /* Ocupa toda la altura de la sección */
+    position: absolute; /* Permite que esté en la parte derecha */
+    right: 0; /* Alinea a la derecha */
+    top: 0; /* Alinea en la parte superior */
+}
+
+/* Estilo para el texto en la sección de héroe */
+.hero-text {
+    max-width: 600px; /* Establece un ancho máximo */
+    margin-top: 60px; /* Añade un margen superior para bajar el texto */
+    padding: 20px; /* Agrega padding */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: none;
+    color: #fff; /* Cambiado a blanco */
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    color: #fff; /* Cambiado a blanco */
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #fff; /* Cambiado a blanco */
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #1843c3;
+    color: #fff; /* Asegura que el texto sea blanco */
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    display: inline-block; /* Asegura que los botones sean un bloque */
+    margin-bottom: 10px; /* Espacio entre los botones */
+}
+
+.cta-button:hover {
+    background-color: #0288d1;
+}
+
+/* Estilos para la sección de membresías */
+.membership-plans {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco translúcido */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.membership-plans h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.plans {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Permite que se envuelvan en pantallas pequeñas */
+}
+
+.plan {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px; /* Ancho fijo */
+    height: 350px; /* Altura fija para todas las tarjetas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px; /* Margen entre las tarjetas */
+    display: flex; /* Permite alinear el contenido */
+    flex-direction: column; /* Alinea el contenido en una columna */
+    justify-content: space-between; /* Espaciado entre elementos */
+}
+
+.plan h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.plan p {
+    color: #777;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+}
+
+.plan ul li {
+    margin-bottom: 10px;
+}
+
+.clients {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.clients h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.client-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Permite que se envuelvan en pantallas pequeñas */
+}
+
+.client-card {
+    flex: 1 1 150px; /* Permite que las tarjetas sean flexibles */
+    max-width: 150px; /* Ancho máximo */
+    height: 150px; /* Altura fija para las tarjetas */
+    margin: 10px; /* Margen entre las tarjetas */
+    display: flex; /* Alinea el contenido */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco translúcido */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(232, 224, 224, 0.912);
+}
+
+.client-card img {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    max-height: 100%; /* Asegura que la imagen no exceda la altura del contenedor */
+    object-fit: contain; /* Mantiene la proporción de la imagen */
+}
+
+/* Estilo para el botón de ver clientes */
+.clients .cta-button {
+    margin-top: 20px; /* Espacio superior */
+    padding: 10px 20px; /* Espacio interno */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

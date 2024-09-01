@@ -1,0 +1,243 @@
+/* Estilo básico para restablecer márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo completo con la imagen y ajuste del contenedor */
+body {
+    background: url('fondooficial.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor principal del login */
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco translúcido */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Caja de login con estilo Material Design */
+.login-box {
+    text-align: center;
+}
+
+/* Contenedor del logo */
+.logo-container {
+    margin-bottom: 20px; /* Espacio entre el logo y el título */
+}
+
+/* Estilo del logo */
+.logo-small {
+    width: 70px; /* Tamaño del logo */
+    height: 70px; /* Mantener proporción */
+    border-radius: 50%; /* Hace que el logo sea redondo */
+    display: block; /* Centra el logo */
+    margin: 0 auto; /* Centra horizontalmente */
+}
+
+/* Título y párrafo del formulario */
+.login-box h2 {
+    color: #333333;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.login-box p {
+    color: #666666;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+/* Estilo de los campos de entrada */
+.input-group {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input::placeholder {
+    color: #999999;
+}
+
+input:focus {
+    border-color: #6200ea; /* Color de acento de Material Design */
+    outline: none;
+}
+
+/* Estilo del botón */
+.button-group {
+    text-align: center;
+}
+
+button {
+    background-color: #1313e6; /* Color de acento de Material Design */
+    color: #ffffff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #3512df;
+}
+
+/* Estilos para la tabla de empleados */
+.table-container {
+    margin: 20px; /* Espaciado alrededor de la tabla */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo translúcido */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    max-width: 800px; /* Ancho máximo de la tabla */
+    width: 100%; /* Ancho completo */
+    margin-left: auto; /* Centrar horizontalmente */
+    margin-right: auto; /* Centrar horizontalmente */
+}
+
+table {
+    width: 100%; /* Tabla ocupa todo el contenedor */
+    border-collapse: collapse; /* Elimina espacios entre celdas */
+}
+
+th, td {
+    padding: 10px; /* Espaciado interno de celdas */
+    text-align: left; /* Alineación a la izquierda */
+    border: 1px solid #dddddd; /* Bordes de las celdas */
+}
+
+th {
+    background-color: #f2f2f2; /* Fondo de encabezados */
+    font-weight: bold; /* Negrita para encabezados */
+}
+
+h2 {
+    text-align: center; /* Centra el título de la tabla */
+    margin-bottom: 20px; /* Espaciado inferior del título */
+}
+
+/* Estilos para los enlaces de acción en la tabla */
+a {
+    color: #1313e6; /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+}
+
+a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+}
+
+.table-container td a {
+    margin: 0 5px; /* Espacio entre los enlaces */
+    padding: 5px; /* Espacio interno para mejor clicabilidad */
+    border-radius: 4px; /* Bordes redondeados para un estilo más suave */
+    background-color: rgba(0, 0, 0, 0.05); /* Fondo sutil para el enlace */
+    transition: background-color 0.3s; /* Efecto de transición */
+}
+
+.table-container td a:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Cambio de fondo al pasar el ratón */
+}
+
+#boton_sergio {
+    background-color: #4CAF50; /* Verde */
+    border: none;
+    color: white;
+    padding: 8px 16px; /* Tamaño reducido */
+    text-align: left; /* Texto alineado a la izquierda */
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 10px 0px; /* Sin margen a la izquierda */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    float: left; /* Pegado a la izquierda */
+    width: 150px;
+}
+
+#boton_sergio:hover {
+    background-color: #45a049; /* Verde más oscuro al pasar el mouse */
+    transform: scale(1.05);
+}
+
+#boton_sergio:active {
+    background-color: #3e8e41; /* Verde aún más oscuro al hacer clic */
+    transform: scale(0.98);
+}
+
+#boton_editar {
+    background-color: #4CAF50; /* Verde */
+    border: none;
+    color: white;
+    padding: 8px 16px; /* Tamaño reducido */
+    text-align: left; /* Texto alineado a la izquierda */
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 10px 0px; /* Sin margen a la izquierda */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 80px;
+}
+
+#boton_editar:hover {
+    background-color: #45a049; /* Verde más oscuro al pasar el mouse */
+    transform: scale(1.05);
+}
+
+#boton_editar:active {
+    background-color: #3e8e41; /* Verde aún más oscuro al hacer clic */
+    transform: scale(0.98);
+}
+
+#boton_eliminar {
+    background-color: #4CAF50; /* Verde */
+    border: none;
+    color: white;
+    padding: 8px 16px; /* Tamaño reducido */
+    text-align: left; /* Texto alineado a la izquierda */
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 10px 0px; /* Sin margen a la izquierda */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 80px;
+}
+
+#boton_eliminar:hover {
+    background-color: #45a049; /* Verde más oscuro al pasar el mouse */
+    transform: scale(1.05);
+}
+
+#boton_eliminar:active {
+    background-color: #3e8e41; /* Verde aún más oscuro al hacer clic */
+    transform: scale(0.98);
+}
+
+
+
+
+

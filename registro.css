@@ -1,0 +1,84 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('fondooficial.png'); /* Imagen de fondo para el cuerpo de la página */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.6); /* Fondo más translúcido para el contenedor */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 280px; /* Ajusta el ancho del formulario */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido, incluyendo el logo */
+}
+
+.logo {
+    width: 100px; /* Ajusta el tamaño del logo para que sea más grande */
+    margin-bottom: 20px; /* Espacio entre el logo y el título */
+    opacity: 0.9; /* Ajusta la opacidad del logo para que se integre mejor con el fondo */
+    border-radius: 50%; /* Bordes redondeados para un mejor efecto visual */
+    border: 2px solid rgba(255, 255, 255, 0.8); /* Añade un borde blanco translúcido alrededor del logo */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los campos del formulario a la izquierda */
+}
+
+label {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left; /* Alinea el texto de las etiquetas a la izquierda */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+    width: 100%; /* Ajusta el ancho de los campos del formulario */
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo translúcido para los campos */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2d29f0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+
+
+
+

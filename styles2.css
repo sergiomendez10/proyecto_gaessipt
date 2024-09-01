@@ -1,0 +1,116 @@
+/* Aseguramos que no haya márgenes ni padding adicionales en el body */
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Evita las barras de desplazamiento */
+}
+
+/* Estilos para el logo en la parte superior */
+.logo-rol {
+    display: block;
+    margin: 0 auto;
+    width: 120px; /* Ajuste de tamaño */
+    height: 120px; /* Asegura que sea un círculo perfecto */
+    border-radius: 50%; /* Hace que el logo sea redondo */
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo semitransparente para mezclar con el fondo */
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade una ligera sombra */
+}
+
+/* Sección de selección de roles */
+.role-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ajusta la altura para cubrir toda la pantalla */
+    width: 100vw; /* Ajusta el ancho para cubrir toda la pantalla */
+    background: url('fondooficial.png') no-repeat center center fixed; /* Imagen de fondo */
+    background-size: cover; /* Hace que la imagen cubra toda la sección */
+    color: #333;
+    position: relative; /* Establece un contexto de posición para elementos hijos */
+    box-sizing: border-box; /* Asegura que padding y bordes no aumenten el tamaño de la caja */
+}
+
+/* Eliminamos márgenes superiores e inferiores en el encabezado */
+.role-header {
+    position: relative; /* Necesario para el logo de fondo */
+    text-align: center;
+    margin: 0; /* Elimina márgenes */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Logo de fondo en la cabecera */
+.background-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Abarca todo el recuadro */
+    height: 100%; /* Abarca todo el recuadro */
+    opacity: 0.5; /* Translucidez */
+    z-index: -1; /* Enviar al fondo */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Título de la sesión */
+.session-title {
+    position: relative;
+    z-index: 1; /* Asegura que el texto esté delante del logo */
+    font-size: 32px; /* Tamaño del texto incrementado */
+    color: white; /* Color del texto cambiado a blanco */
+    margin: 20px 0; /* Margen */
+}
+
+.roles {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre los roles */
+    margin-top: 20px; /* Espacio arriba de los roles */
+}
+
+.role {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    position: relative; /* Para posicionar las imágenes en relación al contenedor */
+    overflow: hidden; /* Oculta el desbordamiento */
+    width: 180px; /* Aumenta el ancho para un mejor diseño */
+    height: 220px; /* Aumenta la altura para un mejor diseño */
+}
+
+.role:hover {
+    transform: translateY(-10px);
+}
+
+/* Estilo para las imágenes de los roles */
+.role img {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho del recuadro */
+    height: 70%; /* Ajusta la altura para que no cubra todo el recuadro */
+    object-fit: cover; /* Mantiene la proporción y cubre el área */
+    border-radius: 10px 10px 0 0; /* Bordes redondeados en la parte superior */
+}
+
+.role h2 {
+    font-size: 18px; /* Tamaño de texto ajustado */
+    color: #10165e;
+    margin-top: 10px; /* Espaciado entre la imagen y el texto */
+}
+
+.role-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
+
+
+
+
+
+
+
