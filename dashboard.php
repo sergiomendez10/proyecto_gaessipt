@@ -43,7 +43,6 @@ $result = $conn->query($sql);
     </style>
 </head>
 <div class="container"></div>
-<a href="index.php" id="botonlogout" class="btn-logout">cerrar sesion</a>
 </div>
 <body>
     <div class="table-container">
@@ -54,6 +53,7 @@ $result = $conn->query($sql);
         <?php if ($result->num_rows > 0): ?>
             <table>
                 <thead>
+                <a href="index.php" id="botonlogout" class="btn-logout">cerrar sesion</a>
                     <tr>
                         <th>ID</th>
                         <th>Nombre</th>
